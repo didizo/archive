@@ -1,0 +1,29 @@
+h1 {
+    font-size: 100px;
+    color: #444;
+}
+
+div {
+    color: #ff0;
+}
+
+.greeting  {
+    color: #00f;
+}
+
+#greeting2 {
+    color: #f00;
+}
+
+figure {
+    background-color: #ff0;
+}
+
+figure img {
+    margin-left: 100px;
+    transition: 2000ms;
+}
+
+figure.on img {
+    margin-left: 1000px;
+}

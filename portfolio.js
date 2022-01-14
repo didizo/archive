@@ -1,0 +1,40 @@
+$(function(){
+  //-----------------------------------------------------
+  
+  let sc=$('.section');
+  let sideBar = $('nav li');
+  $('#main').fullpage({
+      anchors:['intro', 'portfolio_01', 'portfolio_02', 'portfolio_03', 'portfolio_04', 'portfolio_05', 'profile' ],
+      afterLoad:function(origin, destination, direction){
+          let idx=destination.index;
+          sc.eq(idx).addClass('on').siblings().removeClass('on');
+          sideBar.eq(idx).addClass('on').siblings().removeClass('on');
+      },
+  });
+  
+  let ha = new Typed('.slogan_txt',{
+    strings: ['hayujzzz'],
+    typeSpeed:100,
+  });
+  
+  $('.cover_btn').on('click', function(){
+    $('#cover').slideToggle();
+  });
+
+  let cloneMenu = $('nav>ul').clone();
+  $('#cover').append(cloneMenu);
+  console.log(cloneMenu);
+
+  $('#cover a').on('click', ()=>{
+    $('#cover').slideUp();
+  })
+  $('#cover').on('scroll wheel touch', ()=>{
+    return false;
+  })
+  //-----------------------------------------------------
+  })
+
+  // const mockup = document.querySelector('.mockup');
+  // mockup.addEventListener('mousemove', ()=>{
+    
+  // } )

@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+/* *{
+  outline: 1px solid #f00--;
+} */
+
+/* top banner */
+#top_pop {
+  background: #f8f8f8;
+  overflow: hidden;
+  height: 110px;
+
+}
+
+#top_pop.on {
+  height: 0;
+  transition: 1s;
+}
+
+#top_pop .container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 25px 15px;
+  position: relative;
+}
+
+#top_pop i {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  background: #333;
+  color: #fff;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#top_pop h2 {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#top_pop p {
+  font-size: 14px;
+}
+
+#top_pop a {
+  border: 1px solid #aaa;
+  padding: 3px 15px 5px 15px;
+  margin-left: 20px;
+}
+
+/*------------ 헤더------------ */
+#header {
+  line-height: 100px;
+}
+
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#header h1 img {
+  width: 200px;
+}
+
+#header nav>ul {
+  display: flex;
+
+}
+
+#header nav>ul li {
+  position: relative;
+}
+
+#header nav>ul li a {
+  display: block;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+
+#header nav>ul>li~li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 13px;
+  background: #444;
+}
+
+#header .search input {
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+#header .search i {
+  font-size: 20px;
+  padding: 5px;
+  background: #444;
+  color: #fff;
+  border-radius: 50%;
+}
+
+/*------------메인 슬라이더------------  */
+#visual .main_slider {
+  /* text-align: center; */
+  color: #fff;
+}
+
+#visual .main_slider figure {
+  position: relative;
+  height: 600px;
+}
+
+#visual .main_slider .item01 {
+  background: url(../img/main_visual01.jpg) no-repeat center center/cover;
+}
+
+#visual .main_slider .item02 {
+  background: url(../img/main_visual02.jpg) no-repeat center center/cover;
+}
+
+#visual .main_slider .item03 {
+  background: url(../img/main_visual03.jpg) no-repeat center center/cover;
+}
+
+#visual .main_slider figure .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(10%, -50%);
+  width: 1200px;
+}
+
+/*------- 2번째 메인슬라이드 가운데정렬 --------*/
+#visual .main_slider figure.item02 .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  text-align: center;
+}
+
+#visual .main_slider figure.item02 .container a {
+  margin: 0 auto;
+}
+
+/*------------ 메인슬라이더 텍스트 ------------ */
+#visual .main_slider figure h3 {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+#visual .main_slider figure.on h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.5s;
+}
+
+#visual .main_slider figure p {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+#visual .main_slider figure.on p {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
+}
+
+#visual .main_slider figure a {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  width: 150px;
+  background: #333;
+  opacity: 0;
+  transform: translateY(100px);
+
+}
+
+#visual .main_slider figure.on a {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1.5s;
+}
+
+/*------------Content 1------------*/
+#con01 {
+  padding: 100px 0;
+  text-align: center;
+}
+
+#con01 h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 1em;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+#con01 p {
+  letter-spacing: -.0.025em;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+#con01 .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#con01 .container figure {
+  flex: 1;
+  padding: 0 15px;
+
+}
+
+#con01 .container figure strong {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#con01 .container figure a {
+  display: block;
+  width: 150px;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+#con01 .container figure a:hover {
+  background: #333;
+  color: #fff;
+}
+
+#con01 .container figure:nth-child(2) .case {
+  border-radius: 50%;
+}
+
+#con01 .container .case {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+#con01 .container .case:hover {
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+}
+
+#con01 .container .case:hover img {
+  transform: scale(1.5);
+
+}
+
+#con01 .container .case img {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+
+}
+
+/* ------------Content 02----------- */
+#con02 {
+  padding: 100px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+#con02 h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 1em;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+#con02 p {
+  letter-spacing: -0.025em;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+#con02 .container {
+  display: flex;
+  /* flex-direction: column;  */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#con02 .container figure {
+  flex: 1;
+  padding: 0 15px;
+}
+
+#con02 .container figure img {
+  width: 100%;
+}
+
+#con02 .container .con {
+  flex: 1;
+  padding: 0 15px;
+  text-align: left;
+}
+
+#con02 h3 {
+  font-size: 20px;
+  letter-spacing: 0.5em;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+#con02 p {
+  line-height: 1.4;
+}
+
+/* ------------Content 03----------- */
+#con03 {
+  padding: 150px 0;
+  background: url(../img/main_visual03.jpg) no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+#con03 h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+#con03 p {
+  letter-spacing: 0.025em;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+#con03 i {
+  padding: 10px;
+  background: #333;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+/* ------------Content 04(video)---------- */
+
+#con04 {
+  padding: 150px 0;
+}
+
+#con04 .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#con04 .container figure {
+  flex: 1;
+  padding: 0 15px;
+}
+
+#con04 .container figure video {
+  width: 100%;
+}
+
+#con04 .container .con {
+  flex: 1;
+  padding: 50px 15px;
+  text-align: center;
+}
+
+#con04 .container .con i {
+  padding: 10px;
+  background: rgb(156, 204, 92);
+  color: #fff;
+  font-size: 30px;
+  border-radius: 30px 0;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+#con04 h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+#con04 p {
+  letter-spacing: 0.025em;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+/* footer */
+
+#footer {
+  padding: 80px 0;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}

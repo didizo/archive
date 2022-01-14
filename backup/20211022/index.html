@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title> 기본레이아웃반복001 +탭메뉴</title>
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+
+<body>
+  <div id="Wrap">
+    <header id="header">
+      <h1>
+        <a href="index.html">
+          <img src="./img/logo.png" alt="">
+        </a>
+      </h1>
+      <nav id="gnb">
+        <ul>
+          <li><a href="">menu01</a></li>
+          <li><a href="">menu02</a></li>
+          <li><a href="">menu03</a></li>
+          <li><a href="">menu04</a></li>
+          <li><a href="">menu05</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="MainVisual">
+        <figure>
+          <img src="./img/main_visual01.jpg" alt="">
+        </figure>
+        <div class="slogan">
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, molestiae!</p>
+        </div>
+      </section>
+      <section id="Event">
+        <h2>Event</h2>
+        <div class="container">
+          <figure>
+            <img src="./img/main_item01.jpg" alt="">
+          </figure>
+          <figure>
+            <img src="./img/main_item02.jpg" alt="">
+          </figure>
+          <figure>
+            <img src="./img/main_item03.jpg" alt="">
+          </figure>
+        </div>
+      </section>
+      <section id="TabContent">
+        <div class="container">
+           <ul>
+             <li>tab01</li> <!-- css:nth-child(1) javascript:index 0 -->
+             <li>tab02</li>
+             <li>tab03</li>
+           </ul>
+           <div class="tab">
+             <div>Lorem ipsum dolor sit amet consectetur.</div>
+             <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis molestias, aut dolorum perspiciatis, corrupti error harum incidunt quos eius consequatur nobis tempora officiis, iusto reiciendis voluptatem. Ad doloremque maiores optio.</div>
+             <div>Lorem ipsum, dolor sit amet consectetur corrupti error harum incidunt quos eius consequatur nobis tempora officiis, iusto reiciendis voluptatem. Ad doloremque maiores optio.</div>
+           </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      &copy; hahaha.
+    </footer>
+
+  </div>
+</body>
+
+</html>

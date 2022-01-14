@@ -1,0 +1,131 @@
+#Wrap {
+  min-width: 1200px;
+}
+
+/*------ 헤더----------- */
+#header h1 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#gnb {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+#gnb>ul {
+  display: flex;
+  justify-content: center;
+  line-height: 60px;
+}
+
+#gnb>ul>li>a {
+  display: block;
+  padding: 0 25px;
+}
+
+/*--------- 메인슬라이더------------ */
+#MainVisual {
+  position: relative;
+}
+
+#MainVisual figure img {
+  width: 100%;
+}
+
+#MainVisual .slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+#MainVisual .slogan h2 {
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 0.5em;
+  margin-bottom: 20px;
+}
+
+#MainVisual .slogan p {
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+/*----------- section1 -event --------------*/
+#Event {
+  padding: 150px 0;
+}
+
+#Event h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+
+#Event .container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#Event .container figure {
+  flex: 1;
+  padding: 0 15px;
+}
+
+#Event .container figure img {
+  width: 100%;
+}
+
+/*--------- tab ------------*/
+
+#TabContent {
+  padding: 150px 0;
+  background: #d4d4d4;
+}
+
+#TabContent .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+#TabContent ul {
+  display: flex;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+#TabContent ul li {
+  flex: 1;
+  text-align: center;
+  background: #333;
+  color:#fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+}
+#TabContent ul li.on {
+  background: rgb(216, 55, 141);
+}
+#TabContent ul li~li {
+  border-left:1px solid #ddd;
+} 
+#TabContent .tab>div {
+  display: none;
+ 
+}
+#TabContent .tab>div.on {
+  display: block; 
+ 
+} 
+
+/* footer */
+#footer {
+  padding: 80px 0 120px 0;
+  text-align: center;
+  background: #333;
+  color: #f2f2f2;
+}
